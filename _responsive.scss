@@ -9,18 +9,9 @@
   }
   
   .global-times {
-    // display: block !important;
-    
-    // .d-flex {
-    //   justify-content: center;
-    // }
-
-    // div:first-child {
-    //   margin-bottom: 1em;
-    // }
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1em !important;
   }
 
   .yt-container {
@@ -169,7 +160,19 @@
     margin: 0 1em !important;
 
     .free-opt {
+      padding: 0 5px !important;
+      width: auto !important;
+    }
+  }
 
+  .bottom-banner {    
+    height: auto !important;
+    h1 {
+      font-size: 25px !important;
+    }
+
+    p {
+      font-size: 20px !important;
     }
   }
    
