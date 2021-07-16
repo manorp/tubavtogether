@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');    
+    body { 
+      font-family: 'Open Sans', sans-serif; 
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      background-color: #e4e9ed;
+    }
+    .container { 
+      width: 1006px; 
+      overflow: auto; 
+      background-color: #fff;
+      padding-bottom: 3em;
+    }
+    .d-flex { display: flex; }
+    .justify-content-around { justify-content: space-around; }
+    .border-b { border-bottom: 1px solid #bdc2c8; }
+    .nav-item { padding: 5px; }
+    .nav-link { 
+      text-transform: uppercase; 
+      text-decoration: none; 
+      color: #707070; 
+      font-size: 16px; 
+      font-weight: 600; 
+    }
+    .nav-link:hover {
+      color: #92278f;
+    }
+    .fw-bold { font-weight: bold; }
+    .text-white { color: #fff; }
+    .rounded-pill { border-radius: 50rem; }
+    .px-5 { padding-right: 3rem; padding-left: 3rem; }
+    .py-5 { padding-top: 3rem; padding-bottom: 3rem; }
+    .bg-grey { background-color: #e4e9ed; }
+    .bg-purple { background-color: #92278f; }
+    .text-purple { color: #92278f; }
+    .text-darkpurple { color: #642343; }
+    .text-grey { color: #707070; }
+    .text-center { text-align: center; }
+    .mb-0 { margin-bottom: 0 !important; }
+    .mt-0 { margin-top: 0 !important; }
+    .mt-3 { margin-top: 3em !important; }
+    .text-link { text-decoration: underline; }
+    .row { display: flex; justify-content: space-between; }
+    .kapitel {
+      width: 74px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #707070;
+      border: 1px solid #707070;
+      text-align: center;
+      font-size: 18px;
+      margin: 0 5px;
+      padding: 5px 0;
+      font-weight: bold;
+    }
+    ul { 
+      list-style-type: square; 
+      list-style-image: url('./images/Bullet.png') 
+    }
+    .d-flex-column { display: flex; flex-direction: column; }
+    .w-100 { width: 100%; }
+  </style>
+
+  <div class="container">
+    <nav class="border-b d-flex justify-content-around">
+      <div class="nav-item">
+        <a href="" class="nav-link">Home</a>
+      </div>
+      <div class="nav-item">
+        <a href="" class="nav-link">All Videos</a>
+      </div>
+      <div class="nav-item">
+        <a href="" class="nav-link">Tehilim</a>
+      </div>
+      <div class="nav-item">
+        <a href="" class="nav-link">About</a>
+      </div>
+      <div class="nav-item">
+        <a href="" class="nav-link">Contact Us</a>
+      </div>
+    </nav>
+    <header class="d-flex border-b" style="justify-content: space-between; padding: 3em 4em; align-items: center; margin-bottom: 2em;">
+      <div>
+        <img src="./images/TuBavTogetherLogo_with_welcome.png" alt="" width="360" height="222">
+      </div>
+      <div class="d-flex" style="flex-direction: column; align-items: center;">
+        <img src="./images/Tefillah.png" alt="" style="margin-bottom: 1em;">
+        <div class="rounded-pill bg-purple text-white text-center px-5" style="padding: 5px 0;
+        display: flex;
+        flex-direction: column;
+        line-height: 1.2; width: 340px !important;">
+          <span style="font-size: 15px;">IF YOU NEED ANY ASSISTANCE</span> <br>
+          <span class="fw-bold" style="font-size: 24px;">CALL: 1-866-923-5224</span>
+        </div>
+      </div>
+    </header>
+    <section class="text-center">
+      <div style="line-height: 1.1;">
+        <h1 class="text-darkpurple mb-0 mt-0" style="font-size: 70px;">LIVE TEFILLAH EVENT</h1>
+        <h2 class="text-grey mt-0 mb-0" style="font-size: 30px;">SUNDAY, JULY 25TH - 12:00PM NY TIME</h2>
+        <div style="margin-top: 1em; margin-bottom: 2em;"><a class="text-link text-grey" href="">CLICK HERE FOR WORLD TIMES</a>&nbsp;&gt;</div>
+      </div>      
+      <div class="global-times d-flex justify-content-around">
+        <div class="text-center" style="padding: 0 1em;">
+          <span class="fw-bold" style="font-size: 16px;">ISRAEL</span><br>
+          <span style="font-size: 20px;">15:00 PM</span>
+        </div>
+        <div class="text-center" style="padding: 0 1em;">
+          <span class="fw-bold" style="font-size: 16px;">ISRAEL</span><br>
+          <span style="font-size: 20px;">15:00 PM</span>
+        </div>
+        <div class="text-center" style="padding: 0 1em;">
+          <span class="fw-bold" style="font-size: 16px;">ISRAEL</span><br>
+          <span style="font-size: 20px;">15:00 PM</span>
+        </div>
+        <div class="text-center" style="padding: 0 1em;">
+          <span class="fw-bold" style="font-size: 16px;">ISRAEL</span><br>
+          <span style="font-size: 20px;">15:00 PM</span>
+        </div>
+        <div class="text-center" style="padding: 0 1em;">
+          <span class="fw-bold" style="font-size: 16px;">ISRAEL</span><br>
+          <span style="font-size: 20px;">15:00 PM</span>
+        </div>
+        <div class="text-center" style="padding: 0 1em;">
+          <span class="fw-bold" style="font-size: 16px;">ISRAEL</span><br>
+          <span style="font-size: 20px;">15:00 PM</span>
+        </div>
+      </div>
+    </section>
+    <figure style="margin: 1em 0 0 0;">
+      <img src="./images/Video-Presentation.jpg" alt="" width="1006">
+    </figure>
+    <section class="bg-grey text-darkpurple" style="padding: 1em 2em; margin: 0 5px 0 5px;">
+      <div class="d-flex" style="margin-bottom: 1em; align-items: center;">
+        <h1 style="font-size: 28px; width: 250px; white-space: nowrap;">WHAT IS TU B'AV <br> TOGETHER?</h1>
+        <P style="font-size: 16px;">
+          Tu B'Av Together is a day of tefillah where 500,000+ Jews will unite in tefillah to <br>
+          daven for all singles in Klal Yisrael. There will also be a MEGA LIVE broadcast event <br>
+          right here on TuBAvTogether.com on Sunday July 25th at 12pm NY Time.
+        </P>
+      </div>
+      <div class="d-flex">
+        <h1 style="font-size: 28px; width: 250px; white-space: nowrap;">WHAT YOU CAN <br> DO RIGHT NOW:</h1>
+        <ul style="margin-right: 1em;">
+          <li>
+            <P style="font-size: 16px;">
+              You can submit names for tefillah (no minimum
+              donation required) to the minyan of talmidei
+              chachamim who will be davening in Amuka on <br>
+              Tu B'Av Together. All names will also be given to <br>
+              Rav Chaim Kanievsky shlita and Rav Shimon Galai <br>
+              shlita for a bracha. (submit names below)
+            </P>
+          </li>
+          <li>
+            <P style="font-size: 16px;">
+              Tu B'Av Together is all about helping each other. <br>
+              To get a message to share with your friends <br>
+              <a class="text-link" href="">CLICK HERE</a> <img src="./images/Whatsapp.png" alt="" style="position: relative; top: 6px;">
+              You're making this a global event!
+            </P>            
+          </li>
+          <li>
+            <p style="font-size: 16px;">
+              Download Free Artscroll Tehillim <a class="text-link" href="">HERE</a> <img src="./images/Book Icon.png" alt="" 
+              style="position: relative; left: 5px; top: 5px;">
+            </p>
+          </li>
+          <li>
+            <p style="font-size: 16px;">
+              Receive updates and reminders about the live event. <br>
+              For WhatsApp <a class="text-link" href="">CLICK HERE</a>, for email <a class="text-link" href="">CLICK HERE</a>
+            </p>
+          </li>
+        </ul>
+        <div style="width: min-content;">
+          <img src="./images/Amuka.jpg" alt="" width="233" style="margin-bottom: 5px;">
+          <img src="./images/351A9627.JPG" alt="" width="233">
+        </div>
+      </div>
+    </section>
+    <section class="text-center text-purple">
+      <h2 style="font-size: 20px;">
+        The mega live tefillah event will feature leading gedolim, and rabbonim<br>
+        who will lead the tefillah and give over words of inspiration.
+      </h2>
+      <figure>
+        <img src="./images/Gedolim.png" alt="" width="816">
+      </figure>
+      <h2 class="mb-0" style="font-size: 20px;">There will also be live musical preformances by:</h2>
+      <figure style="margin: 0 5px; position: relative;">
+        <img src="./images/Singers PNG.png" alt="" width="888" style="z-index: 2; position: relative;">
+        <div class="bg-grey" style="height: 25px; position: relative;top: -30px;"></div>
+      </figure>
+    </section>
+    <section class="text-grey">
+      <div class="text-center" style="line-height: 1.5; margin-bottom: 1em;">
+        <h2 class="mb-0" style="font-size: 20px;">Tehilim to be recited by participants at exactly 12:00 PM - N.Y. Time</h2>
+        <a href="" class="text-link text-grey">See world times here</a>&nbsp;&gt;
+      </div>
+      <div class="d-flex border-b" style="margin: 0 5px; padding: 1em;">
+        <div>
+          <div class="row" style="margin-bottom: 1em;">
+            <div class="kapitel">128</div>
+            <div class="kapitel">127</div>
+            <div class="kapitel">124</div>
+            <div class="kapitel">121</div>
+            <div class="kapitel">82</div>
+            <div class="kapitel">70</div>
+            <div class="kapitel">38</div>
+            <div class="kapitel">32</div>
+          </div>
+          <div class="row">
+            <div class="kapitel" dir="rtl">ל"ב</div>
+            <div class="kapitel" dir="rtl">ל"ח</div>
+            <div class="kapitel" dir="rtl">ע'</div>
+            <div class="kapitel" dir="rtl">פ"ב</div>
+            <div class="kapitel" dir="rtl">קכ"א</div>
+            <div class="kapitel" dir="rtl">קכ"ד</div>
+            <div class="kapitel" dir="rtl">קכ"ז</div>
+            <div class="kapitel" dir="rtl">קכ"ח</div>
+          </div>
+        </div>
+        <div style="border-left: 1px solid #bdc2c8; padding-left: 2em; margin-left: 1em;">
+          <img src="./images/Book Icon.png" alt=""><br>
+          <a href="" class="text-link text-grey">CLICK HERE</a>
+          to download the 
+          Tehilim to be recited on Tu B'Av together.
+        </div>
+      </div>
+    </section>
+    <section class="d-flex-column" style="margin: 0 auto; width: 845px;">
+      <div class="text-center text-darkpurple" style="line-height: 1.5; margin-bottom: 1em;">
+        <h2 class="mb-0" style="font-size: 25px;">Submit your names below to join the Tefillah</h2>
+        <p class="mt-0" style="font-size: 15px;">Tefillos can be for shidduchim, parnasah, children, refuah & all request.</p>
+        <img src="./images/Down.png" alt="">
+      </div>
+      <div class="d-flex text-purple w-100" style="margin-bottom: 1em; align-items: center;">
+        <div class="fw-bold text-center d-flex-column" 
+          style="
+            border: 1px solid #92278f;
+            margin-right: 3em;
+            border-radius: 1rem;
+            line-height: 1;
+            justify-content: center;
+            height: 63px;
+            width: 89px;">
+          <span style="font-size: 25px;">FREE</span><br>
+          <span style="font-size: 15px;">option</small>
+        </div>
+        <p style="font-size: 18px;">To submit your names for free for the upcoming Tefillah, simply select enter 00 <br> as a single donation amount.</p>
+      </div>
+      <div class="bg-purple text-white w-100"
+        style="border-radius: 1.5rem; height: 330px;">
+        <div style="padding: 1rem 3em;">
+          <h1 style="font-size: 30px;">JOIN MONTHLY PROGRAM:</h1>
+          <P class="fw-bold" style="font-size: 25px;">- Recieve 2 FREE amazing gifts to grace your Shabbos table</P>
+          <P class="fw-bold" style="font-size: 25px;">- Special Tefillah in Amuka every Erev Rosh Chodesh</P>
+          <p style="font-size: 20px;">With your monthly donation of at least $18 for 10 months</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
