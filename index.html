@@ -5,75 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');    
-    body { 
-      font-family: 'Open Sans', sans-serif; 
-      display: flex;
-      justify-content: center;
-      padding: 0;
-      margin: 0;
-      background-color: #e4e9ed;
-    }
-    .container { 
-      width: 1006px; 
-      overflow: auto; 
-      background-color: #fff;
-      padding-bottom: 3em;
-    }
-    .d-flex { display: flex; }
-    .justify-content-around { justify-content: space-around; }
-    .border-b { border-bottom: 1px solid #bdc2c8; }
-    .nav-item { padding: 5px; }
-    .nav-link { 
-      text-transform: uppercase; 
-      text-decoration: none; 
-      color: #707070; 
-      font-size: 16px; 
-      font-weight: 600; 
-    }
-    .nav-link:hover {
-      color: #92278f;
-    }
-    .fw-bold { font-weight: bold; }
-    .text-white { color: #fff; }
-    .rounded-pill { border-radius: 50rem; }
-    .px-5 { padding-right: 3rem; padding-left: 3rem; }
-    .py-5 { padding-top: 3rem; padding-bottom: 3rem; }
-    .bg-grey { background-color: #e4e9ed; }
-    .bg-purple { background-color: #92278f; }
-    .text-purple { color: #92278f; }
-    .text-darkpurple { color: #642343; }
-    .text-grey { color: #707070; }
-    .text-center { text-align: center; }
-    .mb-0 { margin-bottom: 0 !important; }
-    .mt-0 { margin-top: 0 !important; }
-    .mt-3 { margin-top: 3em !important; }
-    .text-link { text-decoration: underline; }
-    .row { display: flex; justify-content: space-between; }
-    .kapitel {
-      width: 74px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #707070;
-      border: 1px solid #707070;
-      text-align: center;
-      font-size: 18px;
-      margin: 0 5px;
-      padding: 5px 0;
-      font-weight: bold;
-    }
-    ul { 
-      list-style-type: square; 
-      list-style-image: url('./images/Bullet.png') 
-    }
-    .d-flex-column { display: flex; flex-direction: column; }
-    .w-100 { width: 100%; }
-  </style>
-
   <div class="container">
     <nav class="border-b d-flex justify-content-around">
       <div class="nav-item">
@@ -102,7 +36,7 @@
         display: flex;
         flex-direction: column;
         line-height: 1.2; width: 340px !important;">
-          <span style="font-size: 15px;">IF YOU NEED ANY ASSISTANCE</span> <br>
+          <span style="font-size: 15px;">IF YOU NEED ANY ASSISTANCE</span>
           <span class="fw-bold" style="font-size: 24px;">CALL: 1-866-923-5224</span>
         </div>
       </div>
@@ -140,8 +74,9 @@
         </div>
       </div>
     </section>
-    <figure style="margin: 1em 0 0 0;">
-      <img src="./images/Video-Presentation.jpg" alt="" width="1006">
+    <figure class="yt-container">
+      <img src="./images/Video Presentation.png" alt="" width="1006" style="position: absolute;">
+      <iframe class="youtube" src="https://www.youtube.com/embed/aXVw3A0p2ls"></iframe>
     </figure>
     <section class="bg-grey text-darkpurple" style="padding: 1em 2em; margin: 0 5px 0 5px;">
       <div class="d-flex" style="margin-bottom: 1em; align-items: center;">
@@ -258,7 +193,7 @@
             justify-content: center;
             height: 63px;
             width: 89px;">
-          <span style="font-size: 25px;">FREE</span><br>
+          <span style="font-size: 25px;">FREE</span>
           <span style="font-size: 15px;">option</small>
         </div>
         <p style="font-size: 18px;">To submit your names for free for the upcoming Tefillah, simply select enter 00 <br> as a single donation amount.</p>
