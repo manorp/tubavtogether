@@ -160,8 +160,14 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #707070;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 600;
+}
+
+@media (min-width: 350px) {
+  .nav-link {
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 700px) {
@@ -222,7 +228,7 @@ header .container > div img {
   max-width: 100%;
 }
 
-header .container > div div {
+header .rounded-pill {
   width: 100%;
   padding: 5px 0;
   display: -webkit-box;
@@ -237,20 +243,52 @@ header .container > div div {
   text-align: center;
 }
 
-header .compaign-logo {
+header .rounded-pill span:first-child {
+  font-size: 12px;
+}
+
+@media (min-width: 350px) {
+  header .rounded-pill span:first-child {
+    font-size: 15px;
+  }
+}
+
+header .rounded-pill span:last-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (min-width: 350px) {
+  header .rounded-pill span:last-child {
+    font-size: 24px;
+  }
+}
+
+.compaign-logo {
   width: 100%;
   margin-bottom: 2em;
 }
 
 @media (min-width: 760px) {
-  header .compaign-logo {
+  .compaign-logo {
     margin-bottom: 0;
   }
 }
 
 @media (min-width: 700px) {
-  header .compaign-logo {
+  .compaign-logo {
     width: 360px;
+  }
+}
+
+.main-title {
+  margin: 0 auto;
+  font-size: 45px;
+}
+
+@media (min-width: 400px) {
+  .main-title {
+    font-size: 70px;
   }
 }
 
@@ -337,13 +375,13 @@ header .compaign-logo {
   }
 }
 
-.yt-container .youtube {
+.youtube {
   width: 360px;
   height: 225px;
 }
 
 @media (min-width: 700px) {
-  .yt-container .youtube {
+  .youtube {
     z-index: 3;
     position: relative;
     top: 50px;
@@ -352,7 +390,7 @@ header .compaign-logo {
 }
 
 @media (min-width: 1000px) {
-  .yt-container .youtube {
+  .youtube {
     top: 63px;
     left: -4px;
     width: 490px;
@@ -391,19 +429,30 @@ header .compaign-logo {
   }
 }
 
-.writing .promo-images {
-  width: auto !important;
+.writing ul {
+  list-style-type: square;
+  list-style-image: url("../images/compaigns/tubavtogether/Bullet.png");
+}
+
+.promo-images {
   text-align: center;
   margin-top: 2em;
 }
 
-.writing .promo-images img {
-  width: 300px;
+@media (min-width: 900px) {
+  .promo-images {
+    margin-top: 0;
+  }
 }
 
-.writing ul {
-  list-style-type: square;
-  list-style-image: url("../images/compaigns/tubavtogether/Bullet.png");
+.promo-images img {
+  width: 270px;
+}
+
+@media (min-width: 350px) {
+  .promo-images img {
+    width: 300px;
+  }
 }
 
 .global-times {
@@ -494,7 +543,7 @@ header .compaign-logo {
   }
 }
 
-.kapitlach .kapitel {
+.kapitel {
   width: 74px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -512,28 +561,28 @@ header .compaign-logo {
   font-weight: bold;
 }
 
-.tehillim .e32 {
+.e32 {
   -ms-grid-column: 1;
       grid-column-start: 1;
   -ms-grid-row: 1;
       grid-row-start: 1;
 }
 
-.tehillim .e38 {
+.e38 {
   -ms-grid-column: 2;
       grid-column-start: 2;
   -ms-grid-row: 1;
       grid-row-start: 1;
 }
 
-.tehillim .e70 {
+.e70 {
   -ms-grid-column: 3;
       grid-column-start: 3;
   -ms-grid-row: 1;
       grid-row-start: 1;
 }
 
-.tehillim .e82 {
+.e82 {
   -ms-grid-column: 1;
       grid-column-start: 1;
   -ms-grid-row: 2;
@@ -541,7 +590,7 @@ header .compaign-logo {
 }
 
 @media (min-width: 700px) {
-  .tehillim .e82 {
+  .e82 {
     -ms-grid-column: 4;
         grid-column-start: 4;
     -ms-grid-row: 1;
@@ -550,7 +599,7 @@ header .compaign-logo {
   }
 }
 
-.tehillim .e121 {
+.e121 {
   -ms-grid-column: 2;
       grid-column-start: 2;
   -ms-grid-row: 2;
@@ -558,7 +607,7 @@ header .compaign-logo {
 }
 
 @media (min-width: 700px) {
-  .tehillim .e121 {
+  .e121 {
     -ms-grid-column: 1;
         grid-column-start: 1;
     -ms-grid-row: 2;
@@ -566,7 +615,7 @@ header .compaign-logo {
   }
 }
 
-.tehillim .e124 {
+.e124 {
   -ms-grid-column: 3;
       grid-column-start: 3;
   -ms-grid-row: 2;
@@ -574,13 +623,13 @@ header .compaign-logo {
 }
 
 @media (min-width: 700px) {
-  .tehillim .e124 {
+  .e124 {
     -ms-grid-column: 2;
         grid-column-start: 2;
   }
 }
 
-.tehillim .e127 {
+.e127 {
   -ms-grid-column: 1;
       grid-column-start: 1;
   -ms-grid-row: 3;
@@ -588,7 +637,7 @@ header .compaign-logo {
 }
 
 @media (min-width: 700px) {
-  .tehillim .e127 {
+  .e127 {
     -ms-grid-column: 3;
         grid-column-start: 3;
     -ms-grid-row: 2;
@@ -596,7 +645,7 @@ header .compaign-logo {
   }
 }
 
-.tehillim .h32 {
+.h32 {
   -ms-grid-column: 3;
       grid-column-start: 3;
   -ms-grid-row: 1;
@@ -604,13 +653,13 @@ header .compaign-logo {
 }
 
 @media (min-width: 700px) {
-  .tehillim .h32 {
+  .h32 {
     -ms-grid-column: 4;
         grid-column-start: 4;
   }
 }
 
-.tehillim .h38 {
+.h38 {
   -ms-grid-column: 2;
       grid-column-start: 2;
   -ms-grid-row: 1;
@@ -618,13 +667,13 @@ header .compaign-logo {
 }
 
 @media (min-width: 700px) {
-  .tehillim .h38 {
+  .h38 {
     -ms-grid-column: 3;
         grid-column-start: 3;
   }
 }
 
-.tehillim .h70 {
+.h70 {
   -ms-grid-column: 1;
       grid-column-start: 1;
   -ms-grid-row: 1;
@@ -632,13 +681,13 @@ header .compaign-logo {
 }
 
 @media (min-width: 700px) {
-  .tehillim .h70 {
+  .h70 {
     -ms-grid-column: 2;
         grid-column-start: 2;
   }
 }
 
-.tehillim .h82 {
+.h82 {
   -ms-grid-column: 3;
       grid-column-start: 3;
   -ms-grid-row: 2;
@@ -646,7 +695,7 @@ header .compaign-logo {
 }
 
 @media (min-width: 700px) {
-  .tehillim .h82 {
+  .h82 {
     -ms-grid-column: 1;
         grid-column-start: 1;
     -ms-grid-row: 1;
@@ -655,7 +704,7 @@ header .compaign-logo {
   }
 }
 
-.tehillim .h121 {
+.h121 {
   -ms-grid-column: 2;
       grid-column-start: 2;
   -ms-grid-row: 2;
@@ -663,13 +712,13 @@ header .compaign-logo {
 }
 
 @media (min-width: 700px) {
-  .tehillim .h121 {
+  .h121 {
     -ms-grid-column: 4;
         grid-column-start: 4;
   }
 }
 
-.tehillim .h124 {
+.h124 {
   -ms-grid-column: 1;
       grid-column-start: 1;
   -ms-grid-row: 2;
@@ -677,7 +726,7 @@ header .compaign-logo {
 }
 
 @media (min-width: 700px) {
-  .tehillim .h124 {
+  .h124 {
     -ms-grid-column: 3;
         grid-column-start: 3;
   }

@@ -21,7 +21,10 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #707070;
-  font-size: 12px;
+  font-size: 10px;
+  @media (min-width: 350px) {
+    font-size: 12px;
+  }
   @media (min-width: 700px) {
     font-size: 16px;
   }
@@ -53,27 +56,48 @@ header {
       img {
         max-width: 100%;
       }
-      div {
-        width: 100%;
-        padding: 5px 0;
-        display: flex;
-        flex-direction: column;
-        line-height: 1.2;
-        color: #fff;
-        text-align: center;
-      }
     }
   }
-
-  .compaign-logo {
+  .rounded-pill {
     width: 100%;
-    margin-bottom: 2em;
-    @media (min-width: 760px) {
-      margin-bottom: 0;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    color: #fff;
+    text-align: center;
+    span:first-child {
+      font-size: 12px;
+      @media (min-width: 350px) {
+        font-size: 15px;
+      }
     }
-    @media (min-width: 700px) {
-      width: 360px;
+    span:last-child {
+      font-size: 20px;
+      @media (min-width: 350px) {
+        font-size: 24px;
+      }      
+      font-weight: bold;
     }
+  }
+}
+
+.compaign-logo {
+  width: 100%;
+  margin-bottom: 2em;
+  @media (min-width: 760px) {
+    margin-bottom: 0;
+  }
+  @media (min-width: 700px) {
+    width: 360px;
+  }
+}
+
+.main-title {
+  margin: 0 auto;
+  font-size: 45px;
+  @media (min-width: 400px) {
+    font-size: 70px;
   }
 }
 
@@ -135,22 +159,22 @@ header {
       width: 1000px;
     }
   }
+}
 
-  .youtube {  
-    width: 360px;
-    height: 225px;
-    @media (min-width: 700px) {
-      z-index: 3;
-      position: relative;
-      top: 50px;
-      left: -2px;
-    }
-    @media (min-width: 1000px) {
-      top: 63px;
-      left: -4px;
-      width: 490px;
-      height: 314px;
-    }
+.youtube {  
+  width: 360px;
+  height: 225px;
+  @media (min-width: 700px) {
+    z-index: 3;
+    position: relative;
+    top: 50px;
+    left: -2px;
+  }
+  @media (min-width: 1000px) {
+    top: 63px;
+    left: -4px;
+    width: 490px;
+    height: 314px;
   }
 }
 
@@ -176,19 +200,24 @@ header {
     }
   }
 
-  .promo-images {
-    width: auto !important;
-    text-align: center;
-    margin-top: 2em;
-
-    img {
-      width: 300px;
-    }
-  }
-
   ul {
     list-style-type: square;
     list-style-image: url('../images/compaigns/tubavtogether/Bullet.png')
+  }
+}
+
+.promo-images {
+  text-align: center;
+  margin-top: 2em;
+  @media (min-width: 900px) {
+    margin-top: 0;
+  }
+
+  img {
+    width: 270px;
+    @media (min-width: 350px) {
+      width: 300px;
+    }    
   }
 }
 
@@ -217,7 +246,6 @@ header {
       text-align: initial;
     }
   }
-
 }
 
 .kapitlach {
@@ -244,119 +272,116 @@ header {
       }
     }
   }
+}
 
-  .kapitel {
-    width: 74px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #707070;
-    text-align: center;
-    font-size: 18px;
-    padding: 5px 0;
-    font-weight: bold;
+.kapitel {
+  width: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #707070;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px 0;
+  font-weight: bold;
+}
+
+.e32 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.e38 {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+.e70 {
+  grid-column-start: 3;
+  grid-row-start: 1
+}
+
+.e82 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  @media (min-width: 700px) {
+    grid-column-start: 4;
+    grid-row: 1 / 2;
   }
 }
 
-.tehillim {
-
-  .e32 {
-    grid-column-start: 1;
-    grid-row-start: 1;
-  }
-
-  .e38 {
-    grid-column-start: 2;
-    grid-row-start: 1;
-  }
-
-  .e70 {
-    grid-column-start: 3;
-    grid-row-start: 1
-  }
-
-  .e82 {
+.e121 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  @media (min-width: 700px) {
     grid-column-start: 1;
     grid-row-start: 2;
-    @media (min-width: 700px) {
-      grid-column-start: 4;
-      grid-row: 1 / 2;
-    }
   }
+}
 
-  .e121 {
+.e124 {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  @media (min-width: 700px) {
     grid-column-start: 2;
-    grid-row-start: 2;
-    @media (min-width: 700px) {
-      grid-column-start: 1;
-      grid-row-start: 2;
-    }
   }
+}
 
-  .e124 {
+.e127 {
+  grid-column-start: 1;
+  grid-row-start: 3;
+  @media (min-width: 700px) {
     grid-column-start: 3;
     grid-row-start: 2;
-    @media (min-width: 700px) {
-      grid-column-start: 2;
-    }
   }
+}
 
-  .e127 {
-    grid-column-start: 1;
-    grid-row-start: 3;
-    @media (min-width: 700px) {
-      grid-column-start: 3;
-      grid-row-start: 2;
-    }
+.h32 {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  @media (min-width: 700px) {
+    grid-column-start: 4;
   }
+}
 
-  .h32 {
+.h38 {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  @media (min-width: 700px) {
     grid-column-start: 3;
-    grid-row-start: 1;
-    @media (min-width: 700px) {
-      grid-column-start: 4;
-    }
   }
+}
 
-  .h38 {
+.h70 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  @media (min-width: 700px) {
     grid-column-start: 2;
-    grid-row-start: 1;
-    @media (min-width: 700px) {
-      grid-column-start: 3;
-    }
   }
+}
 
-  .h70 {
+.h82 {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  @media (min-width: 700px) {
     grid-column-start: 1;
-    grid-row-start: 1;
-    @media (min-width: 700px) {
-      grid-column-start: 2;
-    }
+    grid-row: 1 / 2;
   }
+}
 
-  .h82 {
+.h121 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  @media (min-width: 700px) {
+    grid-column-start: 4;
+  }
+}
+
+.h124 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  @media (min-width: 700px) {
     grid-column-start: 3;
-    grid-row-start: 2;
-    @media (min-width: 700px) {
-      grid-column-start: 1;
-      grid-row: 1 / 2;
-    }
-  }
-
-  .h121 {
-    grid-column-start: 2;
-    grid-row-start: 2;
-    @media (min-width: 700px) {
-      grid-column-start: 4;
-    }
-  }
-
-  .h124 {
-    grid-column-start: 1;
-    grid-row-start: 2;
-    @media (min-width: 700px) {
-      grid-column-start: 3;
-    }
   }
 }
 
